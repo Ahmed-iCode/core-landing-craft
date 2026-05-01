@@ -19,9 +19,14 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: {
+          DEFAULT: "hsl(var(--surface))",
+          elevated: "hsl(var(--surface-elevated))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -63,6 +68,19 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-surface": "var(--gradient-surface)",
+      },
+      boxShadow: {
+        glow: "var(--shadow-glow)",
+        "glow-lg": "var(--shadow-glow-lg)",
+        card: "var(--shadow-card)",
+      },
+      transitionTimingFunction: {
+        smooth: "cubic-bezier(0.22, 1, 0.36, 1)",
+      },
       keyframes: {
         "accordion-down": {
           from: {
@@ -80,10 +98,25 @@ export default {
             height: "0",
           },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-8px)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { boxShadow: "0 0 20px hsl(var(--primary) / 0.4)" },
+          "50%": { boxShadow: "0 0 40px hsl(var(--primary) / 0.7)" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 4s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2.5s ease-in-out infinite",
+        "fade-up": "fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both",
       },
     },
   },
