@@ -8,7 +8,7 @@ export const Hero = () => (
     <div className="container relative grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
       <div className="animate-fade-up">
         <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary-glow">
-          <Sparkles className="size-3" /> New drops every week
+          <Sparkles className="size-3" /> Premium Tech Essentials
         </span>
         <h1 className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tighter">
           Upgrade Your Setup.
@@ -26,16 +26,6 @@ export const Hero = () => (
               Shop the Collection <ArrowRight className="ml-1" />
             </a>
           </Button>
-          <Button variant="glow" size="xl" asChild>
-            <a href="#bundles">View Bundles</a>
-          </Button>
-        </div>
-        <div className="mt-10 flex items-center gap-8 text-sm text-muted-foreground">
-          <div><span className="text-2xl font-bold text-foreground">5K+</span><div>Happy gamers</div></div>
-          <div className="h-10 w-px bg-border" />
-          <div><span className="text-2xl font-bold text-foreground">120+</span><div>Curated items</div></div>
-          <div className="h-10 w-px bg-border" />
-          <div><span className="text-2xl font-bold text-foreground">4.9★</span><div>Avg rating</div></div>
         </div>
       </div>
 
@@ -52,10 +42,9 @@ export const Hero = () => (
           <div className="absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-transparent" />
           <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-border/60 bg-background/70 backdrop-blur-xl px-4 py-3">
             <div>
-              <div className="text-xs text-muted-foreground">Featured build</div>
-              <div className="font-bold">Aurora Blue Edition</div>
+              <div className="text-xs text-muted-foreground">Featured Gear</div>
+              <div className="font-bold">Pro Gaming Desk Mat</div>
             </div>
-            <div className="text-primary-glow font-bold">$1,299</div>
           </div>
         </div>
       </div>
