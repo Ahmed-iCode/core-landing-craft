@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ShoppingCart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "./Logo";
 import { cn } from "@/lib/utils";
@@ -46,12 +46,6 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-2 md:gap-3">
-          <Button variant="ghost" size="icon" aria-label="Cart" className="relative hover:text-primary-glow">
-            <ShoppingCart />
-            <span className="absolute -top-0.5 -right-0.5 h-4 w-4 rounded-full bg-primary text-[10px] font-bold flex items-center justify-center text-primary-foreground shadow-glow">
-              0
-            </span>
-          </Button>
           <Button variant="hero" className="hidden md:inline-flex" asChild>
             <a href="#contact">Contact Us</a>
           </Button>
